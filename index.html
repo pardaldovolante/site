@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pardal do Volante - Volante e Pedais Personalizados</title>
+    <meta name="description" content="Volante e pedais personalizados para simulação de corrida - Projeto completo de desenvolvimento">
+    <link rel="stylesheet" href="novo_estilo.css">
+    <script type="text/javascript" src="src/dropdown.js"></script>
+    <script src="src/hamburger.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="header-content">
+                 <!-- Botão Hamburger (visível apenas mobile) -->
+                <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+                </div>
+                
+                <div class="logo-title">
+                    <img src="src/logo.png" alt="Pardal do volante" class="logo">
+                    <div>
+                        <h1>Pardal do Volante</h1>
+                        <p class="subtitle">Volante e pedais personalizados para simulação de corrida</p>
+                    </div>
+                </div>
+
+    </header>
+
+   <!-- Overlay para mobile -->
+<div class="overlay"></div>
+
+<!-- Sidebar Mobile -->
+<div class="sidebar-mobile">
+    <button class="close-btn">×</button>
+    <h2>Navegação</h2>
+    <ul>
+        <li><a href="#visao">Visão Geral</a></li>
+        
+        <!-- Item com dropdown -->
+        <li class="dropdown-item">
+            <a href="#o-que-e" class="dropdown-toggle">Inicio</a>
+            <div class="dropdown-menu">
+                <a href="#objetivo">Objetivo do Projeto</a>
+                <a href="#recado">Recado</a>
+            </div>
+        </li>
+
+        <!-- Item com dropdown -->
+        <li class="dropdown-item">
+            <a href="#Configuração-FFBeast" class="dropdown-toggle">FFBEAST</a>
+            <div class="dropdown-menu">
+                <a href="#ffbeast">O que é FFBEAST</a>
+                <a href="#efeitos">Efeitos</a>
+                <a href="#perifericos">Periféricos</a>
+                <a href="#Controladores">Controle</a>
+                <a href="#licenças">Licenças</a>
+            </div>
+        </li>
+
+        <li><a href="#volante">Volante + Force Feedback</a></li>
+        <li><a href="#aro">Aro do Volante</a></li>
+        <li><a href="#pedais">Pedais</a></li>
+        <li><a href="#referencias">Referências</a></li>
+        <li><a href="#contribuicao">Como Contribuir</a></li>
+        <li><a href="#licencas">Licença</a></li>
+    </ul>
+</div>
+
+
+
+
+
+    <div class="container">
+        <div class="progress-banner">🚧 Trabalho em Progresso - Projeto em Desenvolvimento</div>
+
+        <div class="content">
+            <aside class="sidebar">
+                <h2>Navegação</h2>
+                <ul>
+                    <!-- Item com dropdown -->
+                    <li class="dropdown-item">
+                        <a href="#" class="dropdown-toggle">
+                        Inicio
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="#o-que-e">O que é Sim Racing?</a>
+                            <a href="#objetivo">Objetivo do Projeto</a>
+                            <a href="#recado">Recado</a>
+                        </div>
+                    </li>
+                    <li><a href="#visao">Visão Geral</a></li>
+                    
+                    <!-- Item com dropdown -->
+                    <li class="dropdown-item">
+                        <a href="#Configuração-FFBeast" class="dropdown-toggle">
+                            FFBeast
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="#ffbeast">O que é FFBEAST</a>
+                            <a href="#efeitos">Efeitos</a>
+                            <a href="#perifericos">Periféricos</a>
+                            <a href="#Controladores">Controle</a>
+                            <a href="#licenças">Licenças</a>
+                        </div>
+                    </li>
+
+
+                    <li><a href="#volante">Volante + Force Feedback</a></li>
+                    <li><a href="#aro">Aro do Volante</a></li>
+                    <li><a href="#pedais">Pedais</a></li>
+                    <li><a href="#referencias">Referências</a></li>
+                    <li><a href="#contribuicao">Como Contribuir</a></li>
+                    <li><a href="#licencas">Licença</a></li>
+                </ul>
+            </aside>
+
+
+
+            <main class="main-content">
+               
+                <section id="o-que-e">
+                    <h2> <img class="ico" src="src/logo.png" alt="Pardal do volante" class="logo">O que é Sim Racing?</h2>
+                    <p>Sim Racing (Simulação de Corrida) é uma modalidade de competição automobilística realizada em ambiente digital, que utiliza simuladores avançados para reproduzir com alta fidelidade a experiência de pilotar um carro real.
+                    Esta modalidade combina tecnologia, engenharia e paixão por automobilismo, criando uma experiência imersiva que se aproxima cada vez mais da realidade.</p>
+                </section>
+
+                <section id="objetivo">
+                    <h2>🎯 Objetivo do Projeto</h2>
+                    
+                    <h3>Objetivo Principal</h3>
+                    <p>Desenvolver um sistema completo de hardware para simulação de corrida, composto por:</p>
+                    <ul>
+                        <li><strong>Volante com Force Feedback</strong> - Sistema de retorno de força para simular a resistência e resposta do volante em condições reais de pista.</li>
+                        <li><strong>Aro com Controles Integrados</strong> - Interface avançada com botões e seletores configuráveis para gerenciamento de funções durante a simulação.</li>
+                        <li><strong>Pedais Personalizados</strong> - Módulos de acelerador, freio e embreagem com sensores de alta precisão e ajuste mecânico.</li>
+                    </ul>
+
+                    <h3>Escopo do Repositório</h3>
+                    <p>O repositório do projeto contempla:</p>
+                    <ul>
+                        <li>Documentação de construção mecânica e eletrônica dos componentes</li>
+                        <li>Programação dos microcontroladores e interfaces de controle</li>
+                        <li>Procedimentos de calibração e configuração do sistema</li>
+                    </ul>
+
+                    <h3>Flexibilidade</h3>  
+                    <p>A documentação foi elaborada para permitir replicação, adaptação e evolução do setup conforme as necessidades específicas de cada usuário ou equipe técnica.</p>
+                    
+                    <h3>Resumo Executivo</h3>
+                    <p>Este projeto tem como objetivo desenvolver um conjunto de equipamentos para simulação de corrida, composto por um volante com force feedback, um aro com controles avançados e pedais personalizados. O repositório registra detalhadamente todas as etapas de construção, programação e configuração, permitindo que outros usuários possam replicar ou adaptar o setup conforme suas próprias necessidades.
+</p>
+                </section>
+
+                <section id="recado">
+    <div class="component-card">
+        <h2>📢 Recado </h2>
+        <p>Importante: Antes de começar qualquer atividade prática do projeto, todos os iniciantes devem ler o guia de referência completo em PDF.</p>
+
+        <div class="progress-banner">
+            ⚠️ Atenção
+        </div>
+
+        <ul class="checklist">
+            <li class="incomplete">
+                Não pule nenhuma parte da leitura. Cada detalhe do guia é essencial para garantir a segurança, a qualidade e o sucesso da montagem.
+            </li>
+            <li class="incomplete">
+                Siga rigorosamente as normas técnicas indicadas no material. Elas definem os padrões exigidos para cada etapa do processo.
+            </li>
+            <li class="incomplete">
+                Somente após a leitura e compreensão total do conteúdo, a montagem poderá ser iniciada.
+            </li>
+        </ul>
+
+        <p>
+            📥 <strong>Baixe o PDF</strong>, leia com atenção e esteja alinhado com os procedimentos. 
+            A execução correta depende do entendimento prévio de todos.
+        </p>
+
+        <div style="text-align: center; margin-top: 1.5rem;">
+            <a href="https://github.com/pardaldovolante/GUIA/blob/main/GUIA.pdf" download class="btn-download">
+                📄 Baixar Guia de Referência (PDF)
+            </a>
+        </div>
+    </div>
+                </section>
+
+                 <section id="visao">
+                    <h2>📋 Visão Geral do Projeto</h2>
+                    <div class="roadmap">
+                        <div class="roadmap-item">
+                            <h4>🎮 Volante com Force Feedback</h4>
+                            <ul class="checklist">
+                                <li>Impressão 3D do case</li>
+                                <li>Compra das peças</li>
+                                <li>Montagem do volante
+                                    <ul class="checklist">
+                                        <li>Adicionar botão de centralização</li>
+                                        <li>Adicionar cooler para resfriamento</li>
+                                        <li>Trocar o conector de energia para um mais robusto</li>
+                                    </ul>
+                                </li>
+                                <li>Programação do force feedback</li>
+                                <li>Testes e ajustes</li>
+                            </ul>
+                        </div>
+
+                        <div class="roadmap-item">
+                            <h4>⚙️ Aro do Volante</h4>
+                            <ul class="checklist">
+                                <li>Impressão 3D do aro</li>
+                                <li>Compra das peças</li>
+                                <li>Montagem do aro
+                                    <ul class="checklist">
+                                        <li class="incomplete">Adicionar couro nas laterais do aro</li>
+                                    </ul>
+                                </li>
+                                <li>Programação do aro
+                                    <ul class="checklist">
+                                        <li>Botões
+                                            <ul class="checklist">
+                                                <li>14 botões</li>
+                                                <li>2 botões de troca de marcha</li>
+                                            </ul>
+                                        </li>
+                                        <li>LED de status
+                                            <ul class="checklist">
+                                                <li>Ligado</li>
+                                                <li>Conexão Bluetooth</li>
+                                            </ul>
+                                        </li>
+                                        <li>Botão On/Off</li>
+                                        <li class="incomplete">Indicador de porcentagem de bateria</li>
+                                    </ul>
+                                </li>
+                                <li>Testes e ajustes</li>
+                            </ul>
+                        </div>
+
+                        <div class="roadmap-item">
+                            <h4>👞 Pedais</h4>
+                            <ul class="checklist">
+                                <li>Impressão 3D dos pedais</li>
+                                <li>Compra das peças</li>
+                                <li>Montagem dos pedais</li>
+                                <li>Programação dos pedais</li>
+                                <li>Testes e ajustes</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="ffbeast">
+        <div class="component-card">
+        <h2>🏎️ O que é o FFBEAST?</h2>
+        <p>
+            <strong>FFBEAST</strong> é um sistema de controle e configuração para simuladores de corrida, 
+            compatível com diversos periféricos como volantes, pedais e bases de força. Ele permite:
+        </p>
+
+        <ul>
+            <li><strong>Configuração detalhada de firmware</strong> para dispositivos de simulação</li>
+            <li><strong>Perfis de efeitos personalizados</strong>, como força de retorno e vibração</li>
+            <li><strong>Integração com apps de ajuste</strong>, para calibrar e salvar configurações</li>
+            <li><strong>Backup de licenças e parâmetros</strong>, essencial antes de atualizações</li>
+        </ul>
+
+        <h3>🧰 Aplicações práticas</h3>
+        <p>
+            Usuários do FFBEAST geralmente o utilizam em conjunto com bases de volante estilo <strong>Fanatec</strong>, 
+            como as projetadas para impressão 3D. Um exemplo é a base FFBEAST desenhada por <strong>LAZARRO</strong>, que oferece:
+        </p>
+
+        <ul>
+            <li>Estrutura robusta e personalizável</li>
+            <li>Compatibilidade com diversos volantes e pedais</li>
+            <li>Arquivos em formato <strong>STL</strong> para impressão 3D</li>
+        </ul>
+
+        <h3>📦 Onde encontrar</h3>
+        <p>
+            Você pode acessar a documentação oficial e os arquivos de instalação do FFBEAST diretamente no site do projeto:
+        </p>
+
+        <div style="text-align: center; margin-top: 1.5rem;">
+            <a href="https://ffbeast.github.io/docs/en/downloads.html" target="_blank" class="btn-download">
+                🌐 FFBEAST Downloads e Documentação
+            </a>
+        </div>
+    </div>
+               </section>
+
+                <section id="efeitos">
+                <div class="component-card">
+                <h2>⚙️ Configuração de Efeitos no FFBeast</h2>
+                <p>
+                    Esta página explica como configurar os efeitos de força e movimento no 
+                    <strong>FFBeast Setup App</strong>, que controla dispositivos como volantes e joysticks em simuladores. 
+                    Ela detalha cada parâmetro que você pode ajustar para personalizar a sensação de pilotagem ou controle.
+                </p>
+                <img class="image-placeholder" src="src/setup_effects.jpg" alt="efeitos">
+            
+                <h3>⚙️ Principais configurações explicadas</h3>
+                <p>Aqui está um resumo dos principais efeitos que você pode configurar:</p>
+
+        <div class="roadmap">
+            <div class="roadmap-item">
+                <h4>🎮 Axis Setup (Configuração de Eixo)</h4>
+                <ul>
+                    <li><strong>Motion Range:</strong> Define o quanto o dispositivo se move e envia sinal. Se você usa engrenagens ou redutores, precisa ajustar esse valor.</li>
+                    <li><strong>Total Effect Strength:</strong> Controla a força geral aplicada no eixo — quanto mais alto, mais forte o retorno.</li>
+                </ul>
+            </div>
+
+            <div class="roadmap-item">
+                <h4>🌀 Integrated Spring Strength</h4>
+                <p>Adiciona uma “mola virtual” que sempre tenta centralizar o controle. Você escolhe o quão forte ela será.</p>
+            </div>
+
+            <div class="roadmap-item">
+                <h4>🧱 Soft Stop</h4>
+                <ul>
+                    <li><strong>Soft Stop Strength:</strong> Simula um limite suave no fim do movimento, como se o controle “parasse” gradualmente.</li>
+                    <li><strong>Soft Stop Range:</strong> Define a área onde essa força começa a agir.</li>
+                    <li><strong>Soft Stop Dampening:</strong> Adiciona amortecimento extra quando o controle chega ao fim do curso.</li>
+                </ul>
+            </div>
+
+            <div class="roadmap-item">
+                <h4>🧊 Dampening (Amortecimento)</h4>
+                <ul>
+                    <li><strong>Static Dampening:</strong> Sempre resiste ao movimento, como se o controle estivesse “pesado”.</li>
+                    <li><strong>Dynamic Dampening:</strong> Varia conforme a força aplicada, mas só funciona se o <strong>FFBeast Commander</strong> estiver rodando.</li>
+                </ul>
+            </div>
+
+            <div class="roadmap-item">
+                <h4>✈️ Max Force Available (Somente para controles de voo)</h4>
+                <ul>
+                    <li>Define a força real que o dispositivo pode aplicar. Isso ajuda o sistema a calcular corretamente quanta energia usar para simular uma força específica (ex: 5 kg de pressão).</li>
+                    <li>Se você colocar um valor maior do que o real, o controle vai parecer mais “leve”. Se colocar menor, vai parecer mais “duro”.</li>
+                </ul>
+            </div>
+
+            <div class="roadmap-item">
+                <h4>🖥️ DirectX Effects</h4>
+                <p>Esses ajustes afetam jogos que usam efeitos nativos do DirectX:</p>
+                <ul>
+                    <li><strong>Invert Constant Force:</strong> Corrige jogos que enviam força invertida.</li>
+                    <li><strong>Spring Force Strength:</strong> Ajusta a força das molas virtuais.</li>
+                    <li><strong>Constant Force Strength:</strong> Ajusta forças constantes (como pressão contínua).</li>
+                    <li><strong>Periodic Force Strength:</strong> Ajusta vibrações e efeitos repetitivos.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+                </section>
+
+                <section id="perifericos">
+    <div class="component-card">
+        <h2>🔌 Perifericos</h2>
+        <p>
+            A aba <strong>“Periphery”</strong> do <strong>FFBeast Setup</strong> permite configurar entradas e extensões conectadas ao 
+            <strong>ODrive</strong>, como botões, eixos analógicos e comunicação SPI. 
+            Ela é essencial para quem quer expandir as funcionalidades do simulador com controles extras.
+        </p>
+
+        <div class="roadmap">
+            <div class="roadmap-item">
+                <h4>🔌 O que é a aba Periphery</h4>
+                <p>
+                    Essa seção do FFBeast Setup App serve para configurar os pinos e interfaces adicionais do seu hardware — 
+                    como botões extras, eixos analógicos e placas SPI — conectados ao controlador <strong>ODrive</strong>.
+                </p>
+            </div>
+
+            <div class="roadmap-item">
+                <h4>🧷 GPIO (General Purpose Input/Output)</h4>
+                  <img class="image-placeholder" src="src/setup_periphery_gpio.jpg" alt="GPIO">
+       
+
+                <p>Você pode configurar os pinos GPIO para diferentes funções:</p>
+                <ul>
+                    <li><strong>Disabled:</strong> o pino não faz nada.</li>
+                    <li><strong>Generic button:</strong> funciona como botão digital. O pino é “alto” por padrão e deve ser puxado para o GND para ativar.</li>
+                    <li><strong>Analog:</strong> transforma o pino em entrada analógica (0 a 3.3V).</li>
+                    <li><strong>SPI CS / SCK / MISO:</strong> pinos para comunicação SPI (chip select, clock e dados).</li>
+                    <li><strong>Enable effects switch:</strong> desativa todos os efeitos quando puxado para GND.</li>
+                    <li><strong>Reset center button:</strong> redefine o centro do controle quando mantido em GND por 1 segundo.</li>
+                    <li><strong>Braking PWM:</strong> emite sinal PWM para controle de freio externo (usado em ODrives antigos).</li>
+                    <li><strong>Reboot:</strong> reinicia o sistema se mantido em GND por 1 segundo.</li>
+                    <li><strong>Effect LED:</strong> reservado, ainda não implementado.</li>
+                </ul>
+        <h2>🔘 Botões de Conexão</h2>
+        <p>
+            O firmware <strong>FFBeast</strong> suporta até <strong>8 botões</strong> conectados separadamente. 
+            A linha de sinal deve ser conectada aos pinos <strong>GPIO 1, 2, 3, 4, 5, 6, 7</strong> ou <strong>8</strong>. 
+            Localize os pinos correspondentes de acordo com a sua placa.
+        </p>
+
+        <div class="roadmap">
+            <div class="roadmap-item">
+                <h4>⚙️ Ativando a funcionalidade</h4>
+                <p>
+                    Para ativar a funcionalidade, é necessário selecionar o 
+                    <strong>modo de botão genérico</strong> correspondente ao GPIO no configurador.
+                </p>
+            </div>
+
+            <div class="roadmap-item">
+                <h4>🔧 Conexão correta dos pinos</h4>
+                <p>
+                    Como no modo botão os pinos <strong>GPIO</strong> são mantidos em nível alto internamente, 
+                    use o pino <strong>GND</strong> como a segunda conexão do seu botão!
+                </p>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 1.5rem;">
+            <a href="https://ffbeast.github.io/docs/en/periphery.html#gpio-buttons" target="_blank" class="btn-download">
+                🧷 Ver Guia Completo de GPIOs e Botões
+            </a>
+        </div>
+                
+            </div>
+
+            <div class="roadmap-item">
+                <h4>🔁 SPI (Serial Peripheral Interface)</h4>
+                <p>
+                    Permite conectar placas de expansão SPI ou empunhaduras <strong>TM/VPC</strong> diretamente ao ODrive. 
+                    Você deve selecionar o modo SPI correto para que a comunicação funcione.
+                </p>
+                <img class="image-placeholder" src="src/setup_periphery_spi.jpg" alt="SPI">
+       
+            </div>
+
+            <div class="roadmap-item">
+                <h4>🎮 Botões</h4>
+                <p>
+                    Se você tiver botões conectados via <strong>GPIO</strong> ou <strong>SPI</strong>, essa aba ficará ativa. 
+                    Nela, você pode configurar o modo de funcionamento de cada botão individualmente.
+                </p>
+                <img class="image-placeholder" src="src/setup_periphery_buttons.jpg" alt="Botões">
+            </div>
+
+            <div class="roadmap-item">
+                <h4>🎚️ Entradas Analógicas</h4>
+                <p>
+                    Se houver eixos analógicos conectados, essa aba também será ativada. Aqui você pode:
+                </p>
+                 <img class="image-placeholder" src="src/setup_periphery_analog.jpg" alt="Analógicos">
+                <ul>
+                    <li>Ajustar o alcance total do eixo (normalmente os sinais cobrem apenas parte do intervalo total).</li>
+                    <li>Definir zonas mortas (<em>dead zones</em>) para evitar ruído ou movimentos indesejados.</li>
+                    <li>Configurar botões que são ativados quando o eixo ultrapassa certos limites (<em>thresholds</em>).</li>
+                </ul>
+
+                <h5>Como ajustar zonas mortas:</h5>
+                 <img class="image-placeholder" src="src/axes_adjust.jpg" alt="Zona mortas">
+                <ul>
+                    <li>Use o app <strong>VkbJoyTester</strong> para verificar os valores mínimo e máximo do eixo.</li>
+                    <li>Divida esses valores por 2 e insira nos campos de zona morta inferior e superior.</li>
+                    <li>Defina os <em>thresholds</em> para ativar botões com base no valor do eixo.</li>
+                </ul>
+            </div>
+        </div>
+      
+    </div>
+                </section>
+
+                <section id="Controladores">
+    <div class="component-card">
+        <h2>🎛️ Controle</h2>
+        <p>
+            A aba <strong>“Controller”</strong> do <strong>FFBeast Setup </strong> é onde você configura os parâmetros centrais do seu dispositivo de simulação — 
+            como força, calibração, potência, suavidade de movimento e resposta do motor. 
+            Essa seção é essencial para garantir que seu volante ou joystick funcione com precisão e segurança.
+        </p>
+        <img class="image-placeholder" src="src/setup_controller.jpg" alt="controle">
+        <h3>⚙️ Configurações principais da aba Controller</h3>
+
+        <div class="roadmap">
+
+            <div class="roadmap-item">
+                <h4>🧪 Common Debug Force</h4>
+                <ul>
+                    <li>Ativa visualização de forças aplicadas nos eixos.</li>
+                    <li>Útil para testes com o app <strong>VkbJoyTester</strong>, que mostra como os eixos reagem às forças simuladas.</li>
+                </ul>
+            </div>
+
+            <div class="roadmap-item">
+                <h4>⚡ Enable Force</h4>
+                <ul>
+                    <li>Liga ou desliga os motores.</li>
+                    <li>Se desativado, o dispositivo não aplica nenhuma força.</li>
+                </ul>
+            </div>
+
+            <div class="roadmap-item">
+                <h4>🔧 Calibration (Calibração)</h4>
+                <p>Define como o dispositivo se calibra ao ligar:</p>
+                <ul>
+                    <li><strong>None:</strong> ignora a calibração. <em>Não recomendado</em> se a força estiver ativada.</li>
+                    <li><strong>Start as the center:</strong> considera a posição inicial como centro. Ideal para volantes sem batentes físicos.</li>
+                    <li><strong>Automatic center of range:</strong> move o controle por toda a faixa e define o centro. Ideal para joysticks com batentes.</li>
+                </ul>
+                <div class="progress-banner">
+                    ⚠️ Se travar na calibração, o dispositivo não será reconhecido via USB.
+                </div>
+            </div>
+
+            <div class="roadmap-item">
+                <h4>🔋 Power Limit</h4>
+                <ul>
+                    <li>Define o limite de potência do sistema.</li>
+                    <li>Deve ser ajustado conforme o motor e a fonte de alimentação (PSU).</li>
+                    <li>Comece com valores baixos (ex: <strong>10</strong>) e aumente gradualmente, verificando se a fonte aguenta e o motor não superaquece.</li>
+                </ul>
+            </div>
+
+            <div class="roadmap-item">
+                <h4>🌀 Calibration Magnitude & Speed</h4>
+                <ul>
+                    <li><strong>Magnitude:</strong> força usada na calibração. Comece com <strong>5</strong> para volantes e <strong>10</strong> para joysticks.</li>
+                    <li><strong>Speed:</strong> velocidade de movimento durante a calibração. Reduza se o controle estiver se movendo rápido demais.</li>
+                </ul>
+            </div>
+
+            <div class="roadmap-item">
+                <h4>🔥 Braking Resistor Limit</h4>
+                <ul>
+                    <li>Quando o motor gira rápido, ele gera tensão que pode desligar a fonte.</li>
+                    <li>Esse parâmetro define quanto dessa energia será dissipada no resistor de frenagem.</li>
+                    <li>Comece com valores baixos (<strong>5–10</strong>) e aumente se necessário.</li>
+                </ul>
+            </div>
+
+            <div class="roadmap-item">
+                <h4>📊 Speed Sample Buffer Size</h4>
+                <ul>
+                    <li>Melhora o cálculo da velocidade em encoders com baixa resolução (CPR &lt; 6000).</li>
+                    <li>Reduz ruído nos efeitos de amortecimento. Ajuste conforme necessário.</li>
+                </ul>
+            </div>
+
+            <div class="roadmap-item">
+                <h4>🧽 Position Smoothing</h4>
+                <ul>
+                    <li>Suaviza a leitura da posição do encoder.</li>
+                    <li>Use apenas se houver instabilidade. Normalmente pode ser deixado em <strong>0</strong>.</li>
+                </ul>
+            </div>
+
+            <div class="roadmap-item">
+                <h4>🎮 Axis Setup</h4>
+                <h5>🔁 Invert Joystick Output</h5>
+                <ul>
+                    <li>Inverte a direção do sinal enviado ao sistema.</li>
+                    <li>Útil se o movimento do controle estiver invertido no visualizador.</li>
+                </ul>
+
+                <h5>🧲 Invert Force Output</h5>
+                <ul>
+                    <li>Inverte a direção da força aplicada.</li>
+                    <li>Teste com “soft stops” para verificar se a força está puxando na direção correta.</li>
+                </ul>
+                <p>Para facilitar, a direção do comando do joystick deve seguir a direção do movimento do volante ou dos comandos de voo. 
+                O <b>JoyTester</b> nos ajudará com isso. Verifique se o marcador no visualizador de joystick se move na mesma direção em que o volante gira. 
+                Se ele se mover na direção oposta, verifique a opção "Inverter saída do joystick" .</p>
+                <img class="image-placeholder" src="src/config.jpg" alt="Configuração">
+            </div>
+            <div class="instruction-card">
+            <h3>Verificação de Direção usando Soft Stops</h3>
+            <p>Você pode usar soft stops como fonte de força para verificar a direção:</p>
+            <ol class="step-list">
+                <li>Defina o limite de potência para um valor baixo (10-15).</li>
+                <li>Defina o range de movimento para um valor baixo (30-40).</li>
+                <li>Mova o volante/joystick até o limite do range.</li>
+                <li>Verifique se o soft stop funciona na direção correta. Se não - inverta o estado da checkbox.</li>
+            </ol>
+            </div>
+
+            <div class="roadmap-item">
+                <h4>🧠 Encoder CPR & Pole Pairs</h4>
+                <ul>
+                    <li><strong>Encoder CPR:</strong> resolução do encoder (veja no datasheet).</li>
+                    <li><strong>Pole Pairs:</strong> número de pares de polos do motor (ex: motores hoverboard têm 15).</li>
+                </ul>
+            </div>
+
+            <div class="roadmap-item">
+                <h4>🧮 P Gain / I Gain</h4>
+                <ul>
+                    <li>Parâmetros do controlador PID que ajusta a corrente do motor.</li>
+                    <li>Comece com os valores padrão. Para ajustes finos, é necessário entender PID (há bons vídeos no YouTube sobre isso).</li>
+                </ul>
+            </div>
+
+         </div>
+    </div>
+               </section>
+
+               <section id="licenças">
+            <div class="component-card">
+            <h2>🛡️ Licenças e Modos de Operação</h2>
+            <p>Como ativar e gerenciar licenças para dispositivos <strong>FFBeast</strong>, incluindo modos de operação e cuidados com o hardware.</p>
+            <img class="image-placeholder" src="src/setup_license.jpg" alt="licença">
+            <div class="roadmap">
+            <div class="roadmap-item">
+                <h4>🛠️ Tipos de modos de operação</h4>
+                <ul>
+                    <li>
+                        <strong>Modo Light (apenas para Hoverboard)</strong><br>
+                        • É o modo padrão da firmware.<br>
+                        • Oferece funcionalidades básicas para montar hoverboard.<br>
+                        • Recursos avançados requerem uma chave de licença.
+                    </li>
+                    <li>
+                        <strong>Modo de Teste de Hardware (apenas para controles de voo)</strong><br>
+                        • Pode ser ativado sem chave de licença.<br>
+                        • Permite configurar e testar todos os parâmetros do dispositivo.<br>
+                        • Limitação: funciona como joystick de mola simples, sem resposta a comandos DirectX FFB ou FFBeast Commander.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="roadmap-item">
+                <h4>🔑 Ativação da licença</h4>
+                <ul>
+                    <li>Selecione o tipo de dispositivo no menu suspenso.</li>
+                    <li>Insira a chave serial.</li>
+                    <li>Clique em <strong>“Ativar”</strong>.</li>
+                    <li>ID do dispositivo: a licença é vinculada ao ID do controlador ODrive (necessário informar ao adquirir a licença).</li>
+                </ul>
+            </div>
+
+            <div class="roadmap-item">
+                <h4>⚠️ Cuidados com o hardware</h4>
+                <ul>
+                    <li>A chave de licença está associada ao número serial do chip STM32.</li>
+                    <li>Se o chip for danificado (curto-circuito ou polaridade invertida), a licença será perdida.</li>
+                    <li>Recomenda-se:</li>
+                    <ul>
+                        <li>Isolar bem os fios.</li>
+                        <li>Evitar erros elétricos.</li>
+                        <li>Tratar o ODrive com cuidado para garantir funcionamento contínuo.</li>
+                    </ul>
+                </ul>
+            </div>
+             <h2>🔓 Recursos da Licença FFBeast</h2>
+             <p>A licença do FFBeast desbloqueia funcionalidades avançadas que não estão disponíveis no modo padrão.</p>
+
+           <div class="roadmap-item">
+                <h4>🔓 Recursos liberados com a licença</h4>
+                <ul>
+                    <li>
+                        <strong>Modo completo de operação:</strong><br>
+                        • Permite que o dispositivo funcione como um sistema Force Feedback completo.<br>
+                        • Habilita resposta a comandos DirectX FFB e FFBeast Commander.<br>
+                        • Ideal para simulação realista em volantes e controles de voo.
+                    </li>
+                    <li>
+                        <strong>Configuração avançada:</strong><br>
+                        • Acesso total aos parâmetros de controle e calibração.<br>
+                        • Suporte a ajustes finos de força, amortecimento e resposta.
+                    </li>
+                    <li>
+                        <strong>Compatibilidade ampliada:</strong><br>
+                        • Funciona com jogos e softwares que exigem suporte completo a Force Feedback.<br>
+                        • Pode ser integrado com sistemas mais complexos de simulação.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="roadmap-item">
+                <h4>🔒 Sem licença (modo Light ou Teste)</h4>
+                <ul>
+                    <li>
+                        <strong>Modo Light (volantes):</strong><br>
+                        • Funciona com recursos básicos.<br>
+                        • Sem resposta a comandos Force Feedback.
+                    </li>
+                    <li>
+                        <strong>Modo de Teste (controles de voo):</strong><br>
+                        • Permite testar hardware e configurar parâmetros.<br>
+                        • Não responde a comandos de simulação.
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+            <h2>Obter uma Licença Premium</h2>
+    
+            <div class="component-card">
+                <h3>Entrega e Ativação</h3>
+                <p>Você receberá o pacote adquirido por e-mail, enviado para o endereço fornecido durante a finalização da compra.</p>
+                
+                <div class="notice-warning">
+                    <h4>Nota importante!</h4>
+                    <p><strong>A partir de 01/01/2025, não serão fornecidas chaves de substituição nem reembolso em caso de queima do seu dispositivo!</strong></p>
+                    <p>Certifique-se de proteger bem todas as conexões e cabos <strong>ANTES</strong> de comprar e ativar a licença. Faça a configuração inicial, teste se tudo funciona e experimente diferentes conexões usando o Modo Leve. Só depois de tudo configurado e seguro, compre e ative a licença. Em condições normais de uso, a chance de danificar o ODrive é praticamente zero!</p>
+                </div>
+            </div>
+
+            <div class="component-card">
+                <h3>Benefícios da Licença Premium</h3>
+                       <p>Apenas para uso pessoal. Entre em contato em <a href="mailto:ffbeast.devices@gmail.com">ffbeast.devices@gmail.com</a> para obter uma licença comercial!</p>
+                
+                <p>Você pode demonstrar seu agradecimento adquirindo uma licença premium para o firmware DIY FFB Wheel. Isso me mostrará que meu trabalho é importante e me motivará a continuar desenvolvendo!</p>
+                
+                <div class="feature-list">
+                    <h4>Você receberá uma única chave serial para o ID do dispositivo fornecido para ativar o firmware como Wheel com funcionalidade estendida desbloqueada:</h4>
+                    <ul class="checklist">
+                        <li>Possibilidade de alterar algumas configurações adicionais não críticas.</li>
+                        <li>Possibilidade de conectar botões/eixos adicionais diretamente ao ODrive.</li>
+                    </ul>
+                </div>
+                
+                <div class="important-note">
+                    <p><strong>Verifique o ID do dispositivo do seu controlador. Você precisará fornecê-lo durante a finalização da compra.</strong></p>
+                </div>
+            </div> 
+            <div class="purchase-section">
+            <a href="https://buy.stripe.com/8wMfZZbzFh1tgWk7sA?locale=en-GB&__embed_source=buy_btn_1P4ox3AUMJA5adUcFstvg88p" 
+            class="purchase-btn" target="_blank">🛒 Comprar Licença Premium </a>
+            </div>          
+                </section>
+
+<section id="ferramentas-necessarias">
+    <h2>🛠️ Ferramentas Necessárias para Trabalhar com Motor de Hoverboard</h2>
+    
+    <div class="component-card">
+        <h3>Lista de Ferramentas</h3>
+        
+        <div class="instruction-card">
+            <h4>Brocas de Ferro</h4>
+            <p>Brocas necessárias nos seguintes diâmetros:</p>
+            <ul class="checklist">
+                <li>5 mm</li>
+                <li>6 mm</li>
+                <li>8 mm</li>
+                <li>10 mm</li>
+            </ul>
+        </div>
+
+        <div class="instruction-card">
+            <h4>Broca Escacolona</h4>
+            <p>Ideal para perfurações maiores ou desbaste rápido:</p>
+            <ul class="checklist">
+                <li>Diâmetro: 4mm até 32mm</li>
+            </ul>
+        </div>
+
+        <div class="notice-warning">
+            <h4>⚠️ Recomendação Importante</h4>
+            <p>Utilize brocas de boa qualidade para garantir precisão nas perfurações e evitar danos ao material.</p>
+        </div>
+    </div>
+</section>
+
+
+                <section id="volante">
+                    <h2>🎮 Volante + Force Feedback</h2>
+                    
+                    <div class="component-card">
+                        <h3>Descrição Técnica</h3>
+                        <p>O volante é a peça principal para controle de direção e sensação de pilotagem. Nele, o force feedback proporciona uma experiência realista ao simular as forças que agem sobre um carro, como curvas acentuadas, frenagens bruscas, e mudanças de terreno.</p>
+                        <p><strong>Tecnologia:</strong> Utiliza motor de hoverboard modificado com controlador ODESC 4.2 para gerenciamento preciso do torque e resposta.</p>
+                    </div>
+
+                    <div class="component-card">
+                        <h3>📸 Imagens e Vídeos</h3>
+                        <div class="image-placeholder">
+                            <!-- <span class="coming-soon">🚧 Galeria em breve</span> -->
+
+                             <div class="video-container">
+                            <!-- Código copiado do YouTube -->
+                            <iframe width="480" height="320" 
+                            src="https://www.youtube.com/embed/7zkZ-C9_oT4" 
+                            title="YouTube video player" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                            </iframe>
+                        </div>
+                        </div>
+                                             
+                       <h3>🧰 Lista de Materiais</h3>
+                       <li>Chapa de alumínio de 3 mm (mínimo 300 mm x 170 mm)</li>
+                       <li>Adesivo 6D Carbono Preto (brilhante)</li>
+                       <li>6 parafusos M5 x 70 mm (DIN 7991)</li>
+                       <li>6 porcas M5 (DIN 934)</li>
+                       <li>4 parafusos M3 x 8 mm para o painel (DIN 912)</li>
+                       <li>4 porcas de inserção roscadas M3 para o painel </li>
+                       <li>6 parafusos M3 x 25 mm para as alças (DIN 912)</li>
+                       <li>4 parafusos M3 x 8 mm para as borboletas (DIN 7991)</li>
+                       <li>4 parafusos M3 x 8 mm para as borboletas da embreagem (DIN 912)</li>
+                       <li>10 porcas M3 para alças e borboletas (DIN 934)</li>
+                       <li>6 parafusos M6 x 8 mm para o corpo do câmbio (ISO 7380-2)</li>
+                       <li>6 parafusos M4 x 8 mm para o corpo do câmbio (DIN 7991)</li>
+                       <li>6 porcas M4 para o corpo do câmbio (DIN 934)</li>
+                       <li>6 parafusos M2.5 x 10 mm para microinterruptores no corpo do câmbio</li>
+                       <li>2 parafusos 2,9 mm x 6 mm (DIN 7981) para adaptador de terminal Arduino Nano</li>
+                       <li>3 tubos de alumínio 8 x 6 x 26 mm para reforço (8 mm diâmetro externo, 6 mm interno, 26 mm comprimento)</li>
+                       <li>2 folhas de camurça tamanho A4 (couro sintético) para as alças </li>
+                       <li>6 ímãs de neodímio 20 mm x 3 mm</li>
+                       <li>3 microinterruptores para borboletas</li>
+                       <li>12 mini interruptores de 12 mm</li>  
+                       <li>Arduino Nano</li>
+                       <li>Adaptador de terminal para Arduino Nano</li>
+                       <li>Conector mini-DIN macho de 6 pinos (para base de volante Thrustmaster)</li>
+                       <li>Fios</li>
+                        
+                    </div>
+                        <div class="component-card">
+                        <h3>🖨️ Modelos 3D</h3>
+                        <ul>
+                            <li><a href="https://drive.google.com/file/d/1IjkZvTPDgyUJj3dq2voKnxtOvKSt_pJT/view?usp=sharing" target="_blank">Aro do volante F1</a> - Design estilo fórmula para impressão 3D</li>
+                            <li><a href="https://www.thingiverse.com/thing:2749233" target="_blank">Quick Release</a> - Sistema de desconexão rápida para troca de aros</li>
+                        </ul>
+                    </div>
+
+
+
+                    <div class="component-card">
+                        <h3>📚 Bibliotecas Utilizadas</h3>
+                        <ul>
+                            <li><a href="https://ffbeast.github.io/" target="_blank">FFBeast</a> - Framework principal para implementação do force feedback</li>
+                        </ul>
+                    </div>
+
+                    <div class="component-card">
+                        <h3>⚡ Funcionalidades</h3>
+                        <ul>
+                            <li>Force feedback com ajuste de intensidade em tempo real</li>
+                            <li>Centralização automática com botão dedicado</li>
+                            <li>Sistema de resfriamento ativo com cooler</li>
+                            <li>Indicador de status (ligado/desligado)</li>
+                            <li>Conexão robusta com conector industrial</li>
+                        </ul>
+                    </div>
+
+                    <div class="component-card">
+                        <h3>🖨️ Modelos 3D</h3>
+                        <ul>
+                            <li><a href="https://cults3d.com/en/3d-model/game/fanatec-style-case-for-hoverboard-sim-wheel" target="_blank">Case estilo Fanatec</a> - Suporte para o motor de hoverboard e componentes eletrônicos</li>
+                            <li><a href="https://cults3d.com/en/3d-model/game/table-clamp-for-fanatec" target="_blank">Prensa de mesa</a> - Fixação segura do volante à mesa com ajuste de pressão</li>
+                        </ul>
+                    </div>
+
+                    <div class="component-card">
+                        <h3>🔧 Componentes e Especificações</h3>
+                        <ul>
+                            <li><strong>Motor de hoverboard</strong> - Utilizado para criar a sensação de resistência e feedback (torque: ~2.5Nm)</li>
+                            <li><a href="https://pt.aliexpress.com/item/1005005763345874.html" target="_blank">ODESC 4.2</a> - Controlador para gerenciamento do motor e intensidade do force feedback</li>
+                            <li><a href="https://pt.aliexpress.com/item/1005005904666959.html" target="_blank">Botão momentâneo</a> - Para centralização do volante</li>
+                            <li><a href="https://pt.aliexpress.com/item/1005006825516125.html" target="_blank">Resistor de frenagem 50w 10ohm</a> - Dissipação de energia durante uso intensivo</li>
+                            <li><a href="https://produto.mercadolivre.com.br/MLB-3732855248-fonte-24v-30a-720w-chaveada-estabilizada-bivolt-cabo-_JM" target="_blank">Fonte 12v 30a</a> - Alimentação estável para o sistema</li>
+                            <li><a href="https://pt.aliexpress.com/item/1005005779039462.html" target="_blank">Encoder Rotativo 1000ppr</a> - Precisão na leitura da rotação do volante</li>
+                            <li><a href="https://pt.aliexpress.com/item/1005002468157849.html" target="_blank">2x Cooler 24v</a> - Resfriamento eficiente do motor</li>
+                        </ul>
+                    </div>
+
+                    <div class="component-card">
+                        <h3>🔌 Esquema Elétrico</h3>
+                        <div class="image-placeholder">
+                            <span class="coming-soon">🚧 Diagrama em desenvolvimento</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="aro">
+                    <h2>⚙️ Aro do Volante</h2>
+                    
+                    <div class="component-card">
+                        <h3>Descrição Técnica</h3>
+                        <p>O aro é a parte externa que o piloto segura e onde estão dispostos os controles de troca de marcha e outros botões personalizáveis. Conecta-se ao volante principal e comunica-se com o computador, permitindo interação com o jogo e ajustes durante a corrida.</p>
+                        <p><strong>Nota:</strong> Utilize a programação da pasta <code>volante_botoes</code> para a programação do ESP32.</p>
+                    </div>
+
+                    <div class="component-card">
+                        <h3>📸 Imagens e Vídeos</h3>
+                        <div class="image-placeholder">
+                            <span class="coming-soon">🚧 Galeria em breve</span>
+                        </div>
+                    </div>
+
+                    <div class="component-card">
+                        <h3>📚 Bibliotecas Utilizadas</h3>
+                        <ul>
+                            <li><a href="https://github.com/lemmingDev/ESP32-BLE-Gamepad/" target="_blank">ESP32-BLE-Gamepad</a> - Transforma a placa em controle de jogos via Bluetooth</li>
+                            <li><a href="https://github.com/thomasfredericks/Bounce2" target="_blank">Bounce2</a> - Leitura de botões com debounce para evitar múltiplos acionamentos</li>
+                            <li><a href="https://github.com/sstaub/TickTwo" target="_blank">TickTwo</a> - Criação de timers para controle de LEDs e outras funções temporizadas</li>
+                        </ul>
+                    </div>
+
+                    <div class="component-card">
+                        <h3>⚡ Funcionalidades</h3>
+                        <ul>
+                            <li>Conexão híbrida (Bluetooth + USB-C)</li>
+                            <li>16 botões personalizáveis + 2 paddles de troca de marcha</li>
+                            <li>Sistema de troca de marcha sequencial e paddle shift</li>
+                            <li>LEDs indicadores de status (ligado/conectado/bateria)</li>
+                            <li>Alimentação por baterias 18650 com circuito de carregamento</li>
+                            <li>Quick release para troca rápida de aros</li>
+                        </ul>
+                    </div>
+
+                    <div class="component-card">
+                        <h3>🖨️ Modelos 3D</h3>
+                        <ul>
+                            <li><a href="https://www.thingiverse.com/thing:4891321" target="_blank">Aro do volante F1</a> - Design estilo fórmula para impressão 3D</li>
+                            <li><a href="https://www.thingiverse.com/thing:2749233" target="_blank">Quick Release</a> - Sistema de desconexão rápida para troca de aros</li>
+                        </ul>
+                    </div>
+
+                    <div class="component-card">
+                        <h3>🔧 Componentes e Especificações</h3>
+                        <ul>
+                            <li><a href="https://pt.aliexpress.com/item/1005004605399313.html" target="_blank">ESP32 devkit</a> - Microcontrolador principal com Bluetooth</li>
+                            <li><a href="https://pt.aliexpress.com/item/1005005904666959.html" target="_blank">12x Botão momentâneo</a> - Para funções específicas no jogo</li>
+                            <li><a href="https://pt.aliexpress.com/item/1005006085607858.html" target="_blank">2x Micro switch</a> - Para as trocas de marcha nos paddles</li>
+                            <li><a href="https://pt.aliexpress.com/item/1005005638404503.html" target="_blank">2x Bateria 18650</a> - Alimentação com boa autonomia</li>
+                            <li><a href="https://pt.aliexpress.com/item/1005004427739715.html" target="_blank">Placa TP4056</a> - Circuito de carregamento das baterias</li>
+                            <li><a href="https://pt.aliexpress.com/item/1005007458786256.html" target="_blank">Conector USB-C</a> - Para carregamento e comunicação</li>
+                            <li><a href="https://pt.aliexpress.com/item/1005003320296052.html" target="_blank">LED 3mm verde</a> - Indicador de status</li>
+                            <li><a href="https://pt.aliexpress.com/item/1005001627995396.html" target="_blank">Resistor 150ohm</a> - Limitação de corrente para LEDs</li>
+                            <li><a href="https://produto.mercadolivre.com.br/MLB-1591116434-10x-mini-chave-gangorra-kcd11-101-ligadesliga-2t-3a-250v-pt-_JM" target="_blank">Chave liga/desliga</a> - Controle de energia do sistema</li>
+                        </ul>
+                    </div>
+
+                    <div class="component-card">
+                        <h3>🔌 Esquema Elétrico</h3>
+                        <div class="image-placeholder">
+                            <span class="coming-soon">🚧 Diagrama em desenvolvimento</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="pedais">
+                    <h2>👞 Pedais</h2>
+                    
+                    <div class="component-card">
+                        <h3>Descrição Técnica</h3>
+                        <p>Os pedais são responsáveis por simular o acelerador, freio e (opcionalmente) embreagem. Atualmente, o projeto inclui apenas acelerador e freio, pois a troca de marcha será feita no volante.</p>
+                        <p><strong>Nota:</strong> Utilize a programação da pasta <code>pedals_joystick</code> para a programação do Arduino Pro Micro.</p>
+                    </div>
+
+                    <div class="component-card">
+                        <h3>📸 Imagens e Vídeos</h3>
+                        <div class="image-placeholder">
+                            <span class="coming-soon">🚧 Galeria em breve</span>
+                        </div>
+                    </div>
+
+                    <div class="component-card">
+                        <h3>📚 Bibliotecas Utilizadas</h3>
+                        <ul>
+                            <li><a href="https://github.com/dmadison/Sim-Racing-Arduino" target="_blank">SimRacing</a> - Comunicação entre pedais e computador</li>
+                            <li><a href="https://github.com/MHeironimus/ArduinoJoystickLibrary" target="_blank">Joystick</a> - Dependência para emulação de controle</li>
+                            <li><a href="https://github.com/thomasfredericks/Bounce2" target="_blank">Bounce2</a> - Leitura estável de botões com debounce</li>
+                        </ul>
+                    </div>
+
+                    <div class="component-card">
+                        <h3>⚡ Funcionalidades</h3>
+                        <ul>
+                            <li>Acelerador e freio com calibração de mínima e máxima</li>
+                            <li>Sensores Hall para precisão e durabilidade</li>
+                            <li>Indicador de status de calibração via LED</li>
+                            <li>Sensibilidade dos pedais ajustável via software</li>
+                            <li>Sistema de molas com resistência progressiva</li>
+                            <li>Rolamentos para movimento suave e durável</li>
+                        </ul>
+                    </div>
+
+                    <div class="component-card">
+                        <h3>🖨️ Modelos 3D</h3>
+                        <ul>
+                            <li><a href="https://cults3d.com/en/3d-model/game/sim-racing-pedal" target="_blank">SIM RACING PEDAL</a> - Design otimizado para impressão 3D (Acelerador e Freio)</li>
+                        </ul>
+                    </div>
+
+                    <div class="component-card">
+                        <h3>🔧 Componentes e Especificações</h3>
+                        <ul>
+                            <li><a href="https://pt.aliexpress.com/item/1005006654641959.html" target="_blank">Arduino Pro Micro Type C</a> - Controlador principal</li>
+                            <li><a href="https://pt.aliexpress.com/item/1005005904666959.html" target="_blank">Botão momentâneo</a> - Para calibração dos pedais</li>
+                            <li><a href="https://produto.mercadolivre.com.br/MLB-1501615041-mola-cromada-rodoar-rodo-ar-caminhao-15-unidades-_JM" target="_blank">2x Molas de rodoar</a> - Retorno dos pedais à posição inicial</li>
+                            <li><a href="https://pt.aliexpress.com/item/32852539663.html" target="_blank">2x Sensor Hall 49e</a> - Leitura precisa das posições dos pedais</li>
+                            <li><a href="https://produto.mercadolivre.com.br/MLB-1463589800-im-neodimio-8x5-mm-n35-10-unidades-_JM" target="_blank">2x Ímãs de neodímio 8x5mm</a> - Para detecção de posição</li>
+                            <li><a href="https://www.mercadolivre.com.br/rolamentos-608-zz-abec-1-kit-com-20-pcs-8x22x7/p/MLB35811125" target="_blank">10x Rolamento 608ZZ</a> - Movimento suave e durável</li>
+                            <li><a href="https://pt.aliexpress.com/item/32607817053.html" target="_blank">2x Capacitor 10uf</a> - Filtro passa-baixa para sensores Hall</li>
+                            <li><a href="https://pt.aliexpress.com/item/1005001627995396.html" target="_blank">3x Resistor 220ohm</a> - Filtragem e limitação de corrente</li>
+                            <li><a href="https://pt.aliexpress.com/item/1005003320296052.html" target="_blank">LED 3mm verde</a> - Indicador de calibração</li>
+                            <li><a href="https://www.mercadolivre.com.br/parafuso-para-cama-com-porca-e-arruela-8mm-x-70mm/p/MLB16112697" target="_blank">Parafuso M8 x 70mm</a> - Estrutura dos pedais</li>
+                    </div>        
+                           
+                </section>
+
+                <section id="referencias">
+                    <h2>📚 Referências Técnicas</h2>
+                    <p>Para aprofundar seus conhecimentos sobre simulação de corrida e a construção de volantes e pedais, consulte os seguintes materiais:</p>
+                    <ul>
+                        <li><a href="https://ffbeast.github.io/docs/en/wheel.html" target="_blank">FFBeast</a> - Documentação completa sobre force feedback</li>
+                        <li><a href="https://www.youtube.com/watch?v=a1Q18tryYvI" target="_blank">A Chave Virou</a> - Excelente vídeo sobre a construção do volante + force feedback</li>
+                        <li><a href="https://www.youtube.com/@SimulaMaker/videos" target="_blank">SimulaMaker</a> Simuladores de corrida, impressão 3D e atividades DIY </li>
+                    </ul>
+                </section>
+            </main>
+        </div>
+    </div>
+
+<!-- <script>
+ document.addEventListener('DOMContentLoaded', function() {
+    const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+    
+    dropdownToggles.forEach(toggle => {
+        toggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            const dropdownMenu = this.nextElementSibling;
+            
+            // Fecha outros dropdowns abertos
+            document.querySelectorAll('.dropdown-menu.show').forEach(menu => {
+                if (menu !== dropdownMenu) {
+                    menu.classList.remove('show');
+                }
+            });
+            
+            document.querySelectorAll('.dropdown-toggle.active').forEach(activeToggle => {
+                if (activeToggle !== this) {
+                    activeToggle.classList.remove('active');
+                }
+            });
+            
+            // Alterna visibilidade do dropdown atual
+            dropdownMenu.classList.toggle('show');
+            this.classList.toggle('active');
+        });
+    });
+    
+    // Fecha dropdown ao clicar fora
+    document.addEventListener('click', function(e) {
+        if (!e.target.closest('.dropdown-item')) {
+            document.querySelectorAll('.dropdown-menu.show').forEach(menu => {
+                menu.classList.remove('show');
+            });
+            document.querySelectorAll('.dropdown-toggle.active').forEach(toggle => {
+                toggle.classList.remove('active');
+            });
+        }
+    });
+});
+</script>    -->
+</body>
+</html>
